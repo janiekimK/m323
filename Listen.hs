@@ -12,5 +12,10 @@ numDiv :: Double -> Double
 numDiv n = sum [1/x | x <- [1..n]]
 
 
---Aufgabe 6
---Schreiben Sie eine Funktion, die Ihnen das zweitletzte Element einer Liste zurückgibt.
+--Aufgabe 9
+--Schreiben Sie eine Funktion dupli, die eine Liste als Parameter erhält und eine Liste zurückgibt, in der jedes Element doppelt vorkommt. 
+--Aus der Liste [4,2,8,3] soll die Liste [4,4,2,2,8,8,3,3] erstellt werden.
+
+dupli :: [a] -> [a]
+dupli [] = []
+dupli (x:xs) = x:x:dupli xs
