@@ -12,7 +12,10 @@ func x y = x == y
 --Aufgabe 2
 --Schreiben Sie eine Funktion, die drei ganze Zahlen als Parameter erhält und True zurückgibt, falls alle Werte gleich sind, 
 --sonst soll False zurückgegeben werden. Der AND-Operator heisst auch hier &&
-
+andFunc :: Int -> Int -> Int -> Bool
+andFunc x y a
+  | x == y && y == a = True
+  | otherwise = False
 
 
 
