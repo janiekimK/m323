@@ -10,3 +10,7 @@ numRange x y = [x..y]
 
 numDiv :: Double -> Double
 numDiv n = sum [1/x | x <- [1..n]]
+
+
+--Aufgabe 6
+--Schreiben Sie eine Funktion, die Ihnen das zweitletzte Element einer Liste zurückgibt.
