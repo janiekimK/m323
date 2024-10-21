@@ -12,4 +12,4 @@ prodEven x = foldl (*) 1 (filter even x)
 --Schreiben Sie eine Funktion mit foldl oder foldr, die eine Liste von positiven, ganzen Zahlen erhält und den grössten Wert in der Liste zurückgibt
 
 bigNum :: [Int] -> Int
-bigNum x = foldl (*) 1 (filter even x)
+bigNum xs = foldr (\x y  -> if x > y then x else y) 0 xs
